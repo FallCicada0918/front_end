@@ -1,0 +1,65 @@
+<!--
+ * @Description: 
+ * @Author: FallCicada
+ * @Date: 2024-11-02 00:04:57
+ * @LastEditors: FallCicada
+ * @LastEditTime: 2024-11-02 18:32:42
+ * @: 無限進步
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>落蝉</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href = "./images/蝉鸣.png" type="image/png">
+</head>
+<body>
+  <header>
+    <a href="#" class="logo">FallCicada</a>
+    <ul>
+      <li><a href="#" class="active">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Work</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </header>
+  <section>
+    <img src="images/stars.png" id="stars">
+    <img src="images/moon.png" id="moon">
+    <img src="images/mountains_behind.png" id="mountains_behind">
+    <h2 id="text"><i>無限進步</i></h2>
+    <a href="#sec" id="btn">Explore</a>
+    <img src="images/mountains_front.png" id="mountains_front">
+  </section>
+  <div class="sec" id="sec">
+    <h2>FallCicada小計</h2>
+    <p>岁在壬午，建丑之月;管带临冠，懵懂出生；命带华盖，六亲缘薄；二十二年，孑然一身；<br>
+        <br>鄙人出身务工之家，落地时天无异像，父母识字略过百，家中寒舍几间，非书香门第，几分瘦田刨食，驾辎车往返求财，得以苟活幸存，全杖上天垂青，母爱父恩，方能蜷缩世间，十二年学堂，混至高中，母亲病逝殒命，至今学至大学，学艺不精，尚未成事，未能行孝，常念此事，锥心泣血。<br>
+        <br>又为不负母望，继续苟全。虽命比纸薄，但心比天高，匍匐人间，百折不挠，引入烟尘，偶得逍遥，学识虽无五车，却喜舞文弄墨，居于市井，窥视庙堂，偶尔故作高深，装模作样，人前不敢卸下伪装，人后不敢直视内心肮脏，为善不能有始有终行，为恶又不敢彻底放纵。<br>
+        <br>贪财又恐世间不容，好色又时常胆怂，既非混世魔王，也非盖世英雄，见庙烧香，遇佛也拜，酒肉均沾，放生时慈悲为怀，杀生时手起刀块，既辜负了三清，也辜负了如来，蹉跎二十余载，无傲人过往可寻，展望未来，一缺少年雄心，苟且偷生，虚度光阴，愧疚为人子。<br>
+        <br>为能尽人之孝行，让父母安心，空叹世间知己难寻，此生为人实属意外，因无经验参照，不尽人意之处，还请多多担待。<br>
+  </div>
+
+  <script>
+    let stars = document.getElementById('stars')
+    let moon = document.getElementById('moon')
+    let mountains_behind = document.getElementById('mountains_behind')
+    let text = document.getElementById('text')
+    let btn = document.getElementById('btn')
+    let mountains_front = document.getElementById('mountains_front')
+    let header = document.querySelector('header')
+
+    window.addEventListener('scroll', function(){
+      let value = window.scrollY;
+      stars.style.left = value * 0.25 + 'px'
+      moon.style.top = value * 1.05 + 'px'
+      mountains_behind.style.top = value * 0.5 + 'px'
+      mountains_front.style.top = value * 0 + 'px'
+      text.style.marginRight = value * 4 + 'px'
+      text.style.marginTop = value * 1.5 + 'px'
+      btn.style.marginTop = value * 1.5 + 'px'
+      header.style.top = value * 0.5 + 'px'
+    })
+  </script>
+</body>
+</html>

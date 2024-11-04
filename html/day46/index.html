@@ -3,18 +3,77 @@
  * @Author: FallCicada
  * @Date: 2024-11-01 10:51:15
  * @LastEditors: FallCicada
- * @LastEditTime: 2024-11-01 11:01:22
+ * @LastEditTime: 2024-11-01 15:51:46
  * @: 無限進步
 -->
 <!--告诉浏览器 Html的版本是H5-->
 <!DOCTYPE html>
+<!--html开始标签-->
 <html lang="en">
+<!--在视口区看不到-->
+<!--文件头部-->
 <head>
+    <!--设置网页编码格式-->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!--设置网页标题栏的图标-->
+    <link rel="icon" href = "./image/truck-fast-outline.png" type="image/png">
+    <br />
+    
+    <!--设置网页标题,在选项卡显示的名字-->
+    <title>第一个网页</title>
 </head>
+
 <body>
     
+    <h3>登录或注册</h3>
+    <form action="">
+        <label for="">用户名</label>
+        <input type="text" name="username" placeholder="请输入用户名" />
+        <br />
+        <label for="">密码</label>
+        <input type="password" name="password" placeholder="请输入密码" />
+        <br />
+        <input type="submit" value="登录"/>
+        <input type="button" value="注册" onclick="window.location.href='register.html'"/>
+        <br />
+    </form>
+    <biv><font color = blue size =200 >hello world</font></biv>
+    <br />
+    <img src="https://www.baidu.com/img/PCtm_d9c8750bed0b3c7d089fa7d55720d6cf.png" alt="404">
+    <br />
+    <!--字体加粗，斜体-->
+    <biv><font color = red size = 200><b><i>hello world</i></b></font></biv>
+    <br />
+    <p>段落</p>
+    <br />
+    <!--换行-->
+    <!--蓝色字体链接-->
+    <img src = "https://i1.hdslb.com/bfs/archive/ff443911fd33e707871091d36d2eb10698f9ea6c.jpg@672w_378h_1c_!web-home-common-cover.avif" alt="404">
+    <br />
+    <biv><a href="https://www.bilibili.com/"><font color = blue size = 200><b><i>哔哩哔哩</i></b></font></a></biv>
 </body>
+<!--文件主体，在网页视口区显示-->
+<!--html结束标签-->
+<style>
+    body {
+        background-color: lightblue;
+    }
+</style>
+<div style="position: fixed; top: 10px; right: 10px;">
+    <label for="bg-color">选择背景颜色:</label>
+    <select id="bg-color" onchange="changeBackgroundColor(this.value)">
+        <option value="lightblue">Light Blue</option>
+        <option value="lightgreen">Light Green</option>
+        <option value="lightyellow">Light Yellow</option>
+        <option value="lightpink">Light Pink</option>
+        <!-- <option value="infinite-progress"><img src="./image/无限进步.jpg" alt="无限进步";"> 无限进步</option> -->
+    </select>
+</div>
+
+
+<script>
+    function changeBackgroundColor(color) {
+        document.body.style.backgroundColor = color;
+    }
+</script>
 </html>
