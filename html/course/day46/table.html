@@ -1,0 +1,68 @@
+<!--
+ * @Description: 
+ * @Author: FallCicada
+ * @Date: 2024-11-04 15:48:22
+ * @LastEditors: FallCicada
+ * @LastEditTime: 2024-11-04 16:24:33
+ * @: 無限進步
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href = "./image/表格.png" type="image/png">
+    <title>table</title>
+    <!-- 样式标签 -->
+    <style>
+        /* 给标签为table的元素设置样式 */
+        table ,th, td {
+            /* 设置边框 宽度1px 黑色 */
+            border: 1px solid black;
+            /* 表格内标签合并 */
+            border-collapse: collapse;
+        }
+        table{
+            /* 设置表格文字居中显示 */
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Header </th>
+            <th>Header </th>
+            <th>Header </th> 
+            <th>数量</th>       
+        </tr>
+        <tr>
+            <td rowspan="2">Row 1</td>
+            <td>Row 1</td>
+            <td>Row 1</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <!-- <td>Row 2</td> -->
+            <td>Row 2</td>
+            <td>Row 2</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>Row 3</td>
+            <td>Row 3</td>
+            <td>Row 3</td>
+            <td>8</td>
+        </tr>
+        <tfoot>
+            <tr>
+                <!-- 合并列 -->
+                <!-- 合并行 -->
+                <!-- <th rowspan="2">数量</th> -->
+                <th colspan="3">总计</th>
+                <td>10</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
