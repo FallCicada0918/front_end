@@ -1,0 +1,127 @@
+<!--
+ * @Description: 
+ * @Author: FallCicada
+ * @Date: 2024-11-04 20:24:05
+ * @LastEditors: FallCicada
+ * @LastEditTime: 2024-11-05 08:56:13
+ * @: 無限進步
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>课程表</title>
+    <!-- 样式标签 -->
+    <style>
+        /* 给标签为table的元素设置样式 */
+        table ,tr, td {
+            /* 设置边框 宽度1px 黑色，仅有横线 */
+              border-bottom: 1px dashed rgba(155, 156, 158, 0.712);
+
+            /* border: 1px dashed rgba(155, 156, 158, 0.712); */
+            /* 表格内标签合并 */
+            border-collapse: collapse;
+        }
+        table{
+            /* 设置表格文字居中显示 */
+            text-align: center;
+        }
+        table ,th{
+            border: 1px solid rgba(155, 156, 158, 0.712);
+        }
+        tr{
+            height: 50px; /* 设置行高为50px */
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col style="width: 5%;">
+            <col style="width: 15%;">
+            <col style="width: 15%;">
+            <col style="width: 15%;">
+            <col style="width: 15%;">
+            <col style="width: 15%;">
+        </colgroup>
+        
+        <tr>
+            <td style="background-color: #bebdc9;"></td>             
+            <th style="background-color: #bebdc9;">周一</th>
+            <th style="background-color: #bebdc9;">周二</th>
+            <th style="background-color: #bebdc9;">周三</th>
+            <th style="background-color: #bebdc9;">周四</th>
+            <th style="background-color: #bebdc9;">周五</th>
+        </tr>
+        <tr>
+            <th style="background-color: #bebdc9;"><font color = gray>1 <rd /> </font> 8:30</th>
+            <td rowspan="2" style="background-color: #fa2879; border-radius: 10px;"><font color = white>大学英语(IV)@1023</font></td>
+            <td></td>
+            <td rowspan="2" style="background-color: #45afda; border-radius: 10px;"><font color = white>大学体育(IV)</font></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th style="background-color: #bebdc9;"><font color = gray>2</font> 9:30</th>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th style="background-color: #bebdc9;"><font color = gray>3</font> 10:30</th>
+            <td></td>
+            <td rowspan="2" style="background-color: #e7f33b; border-radius: 10px;"><font color = white>信息与系统@11302</font></td>
+            <td rowspan="2" style="background-color: #60f33b; border-radius: 10px;"><font color = white>形式与政策(IV)@15208</font></td>
+            <td></td>
+            <td rowspan="2" style="background-color: #3bb9f3; border-radius: 10px;"><font color = white>数据结构与算法分析</font></td>
+        </tr>
+        <tr>
+            <th style="background-color: #bebdc9;"><font color = gray>4</font> 11:30</th>
+        </tr>
+        <tr>
+            <th style="background-color: #bebdc9;"><font color = gray>5</font> 12:30</th>
+            <td></td>
+            <td rowspan="2" style="background-color: #60f33b; border-radius: 10px;"><font color = white>模拟电子技术基础@16204</font></td>
+            <td></td>
+            <td rowspan="2" style="background-color: #1967db; border-radius: 10px;"><font color = white>电装实习@11301</font></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th style="background-color: #bebdc9;"><font color = gray>6</font> 14:30</th>
+        </tr>
+        <tr>
+            <th style="background-color: #bebdc9;"><font color = gray>7</font> 15:30</th>
+            <td rowspan="2" style="background-color: #cbf33b; border-radius: 10px;"><font color = white>毛概@14208</font></td>
+            <td></td>
+            <td rowspan="2" style="background-color: #35f7a6; border-radius: 10px;"><font color = white>电路、信号与系统实验</font></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th style="background-color: #bebdc9;"><font color = gray>8</font> 16:30</th>
+        </tr>
+        <tr>
+            <th style="background-color: #bebdc9;"><font color = gray>9</font> 17:30</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td rowspan="2" style="background-color: #6c3bf3; border-radius: 10px;"><font color = white>信号与系统</font></td>
+        </tr>
+        <tr>
+            <th style="background-color: #bebdc9;"><font color = gray>10</font> 18:30</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td rowspan="2" style="background-color: #d2e620; border-radius: 10px;"><font color = white>大学体育</font></td>
+        </tr>
+        <tr>
+            <th style="background-color: #bebdc9;"><font color = gray>11</font> 19:30</th>
+        </tr>
+        <tr>
+            <th style="background-color: #bebdc9;"><font color = gray>12</font> 20:30</th>
+            <td style="background-color: #d2e620; border-radius: 10px;"><font color = white>选修</font></td>
+        </tr>
+    </table>
+</body>
+</html>

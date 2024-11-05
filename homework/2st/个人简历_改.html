@@ -1,0 +1,116 @@
+<!--
+ * @Description: 
+ * @Author: FallCicada
+ * @Date: 2024-11-04 20:23:36
+ * @LastEditors: FallCicada
+ * @LastEditTime: 2024-11-05 09:27:32
+ * @: 無限進步
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 给标签为table的元素设置样式 */
+        table ,th, td {
+            /* 设置边框 宽度1px 黑色 */
+            border: 1px solid black;
+            /* 表格内标签合并 */
+            border-collapse: collapse;
+        }
+        table{
+            /* 设置表格文字居中显示 */
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col style="width: 70px;">
+            <col style="width: 70px;">
+            <col style="width: 40px;">
+            <col style="width: 70px;">
+            <col style="width: 70px;">
+            <col style="width: 70px;">
+            <col style="width: 100px;">
+        </colgroup>
+        <tr style="height: 30px;">
+            <td>姓名</td>
+            <td></td>
+            <td>性别</td>
+            <td></td>
+            <td>出生年月</td>
+            <td></td>
+            <td rowspan="3">照 <br> 片</td>
+        </tr>
+        <tr style="height: 30px;">
+            <td>籍贯</td>
+            <td></td>
+            <td>民族</td>
+            <td></td>
+            <td>身高</td>
+            <td></td>
+        </tr>
+        <tr style="height: 30px;">
+            <td>政治面貌</td>
+            <td></td>
+            <td>学历</td>
+            <td></td>
+            <td>职业资格</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td rowspan="2">家庭住址</td>
+            <td colspan="2" rowspan="2"></td>
+            <td colspan="2">联系电话</td>
+            <td colspan="2"></td>
+        </tr>
+        <tr>
+            <td colspan="2">E-mail</td>
+            <td colspan="2"></td>
+        </tr>
+        <tr>
+            <td rowspan="3">社会关系</td>
+            <td>关系</td>
+            <td>姓名</td>
+            <td>政治面貌</td>
+            <td colspan="3">工作单位</td>
+        </tr>
+        <tr style="height: 23.33px;">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td colspan="3"></td>
+        </tr>
+        <tr style="height: 23.33px;">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td colspan="3"></td>
+        </tr>
+        <tr style="height: 70px;">
+            <td>教育背景</td>
+            <td colspan="6"></td>
+        </tr>
+        <tr style="height:50px">
+            <td >任职情况</td>
+            <td colspan="6"></td>
+        </tr>
+        <tr style="height: 80px;">
+            <td>获奖情况</td>
+            <td colspan="6"></td>
+        </tr>
+        <tr style="height: 30px;">
+            <td>特长爱好</td>
+            <td colspan="6"></td>
+        </tr>
+        <tr style="height: 100px;">
+            <td>个人自述</td>
+            <td colspan="6"></td>
+        </tr>
+    </table>
+</body>
+</html>
