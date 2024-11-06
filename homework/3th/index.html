@@ -3,7 +3,7 @@
  * @Author: FallCicada
  * @Date: 2024-11-05 15:36:48
  * @LastEditors: FallCicada
- * @LastEditTime: 2024-11-05 16:57:53
+ * @LastEditTime: 2024-11-06 15:07:37
  * @: 無限進步
 -->
 <!DOCTYPE html>
@@ -12,6 +12,31 @@
     <meta charset="UTF-8">
     <title>网上书城</title>
     <link rel="stylesheet" href="./index.css">
+    <style>
+        .map {
+            text-align: left;
+            padding-left: 1010px;
+        }
+        .page-nav{
+            text-align: center;
+            margin-top: 20px;
+        }
+        .divPage .aPage{
+            /* 上下 左右 */
+            padding: 2px 6px; 
+            border: 1px solid #9AAfe5;
+            text-decoration: none;
+            color: #9AAfe5;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .divPage .selected{
+            background-color: #3C00FB;
+            border-color: #3C00FB;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -50,14 +75,17 @@
             <a href="#"><font color="white">生活百科</font></a> |
             <a href="#"><font color="white">全部目录商品</font></a>
         </div>
-
         <div class="search-bar">
             <form action="#">
                 <input type="text" placeholder="Search">
                 <button type="submit">搜索</button>
             </form>
         </div>
-
+        <div class="map">
+            <div>
+            首页&nbsp;&gt;&nbsp;旅游&nbsp;&gt;&nbsp;图书列表
+            </div>
+        </div>
         <div class="product-list">
             <h2>商品目录</h2>
             <p>计算机类 共100种商品</p>
@@ -113,7 +141,18 @@
                     <button>加入购物车</button>
                 </div>
             </div>
+            <div class="divPage" style="text-align: center;">
+                <a class="aPage" href="">上一页</a>
+                <a class="aPage selected" href="">1</a>
+                <a class="aPage" href="">2</a>
+                <a class="aPage" href="">3</a>
+                <a class="aPage" href="">4</a>
+                <a class="aPage" href="">5</a>
+                <a class="aPage" href="">下一页</a>
+                
+              </div>
         </div>
+        
     </main>
 
     <footer>

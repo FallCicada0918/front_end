@@ -3,7 +3,7 @@
  * @Author: FallCicada
  * @Date: 2024-11-05 11:04:51
  * @LastEditors: FallCicada
- * @LastEditTime: 2024-11-05 19:40:05
+ * @LastEditTime: 2024-11-06 10:52:52
  * @: 無限進步
 -->
 <!DOCTYPE html>
@@ -12,82 +12,7 @@
     <meta charset="UTF-8">
     <title>新用户注册</title>
     <script src="./register.js"></script>
-    <style>
-        body {
-            background-image: url('./image/无限进步.jpg'); 
-            background-size: cover;
-            background-position: center;
-            font-family: Arial, sans-serif;
-        }
-        .container {
-            width: 70%; /* 宽度为70% */
-            max-width: 800px; /* 最大宽度为800px */
-            margin: 50px auto; /* 上下外边距为50px，左右外边距自动 */
-            padding: 20px; /* 内边距为20px */
-            border-radius: 5px; /* 边框圆角半径为5px */
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 盒子阴影 */
-            background-color: rgba(255, 255, 255, 0.8); /* 背景颜色为白色，透明度为0.8 */
-        }
-
-        .login-link {
-            position: absolute; /* 绝对定位 */
-            top: 40px; /* 距离顶部40px */
-            right: 280px; /* 距离右侧280px */
-        }
-        
-        h2 {
-            color: orange;
-        }
-        label {
-            display: block;
-            margin-bottom: 5px;
-        }
-        
-        /* 设置文本框、密码框和电子邮件输入框的样式 */
-        input[type="text"], input[type="password"], input[type="email"] {
-            width: 80%; /* 宽度为100% */
-            padding: 10px; /* 内边距为10px */
-            margin-bottom: 15px; /* 下外边距为15px */
-            border: 1px solid #ccc; /* 边框为1px实线，颜色为#ccc */
-            border-radius: 3px; /* 边框圆角半径为3px */
-            
-        }
-        
-        /* 设置单选按钮的样式 */
-        input[type="radio"] {
-            margin-right: 5px; /* 右外边距为5px */
-        }
-        
-        /* 设置按钮的样式 */
-        button {
-            width: 100%; /* 宽度为100% */
-            padding: 10px; /* 内边距为10px */
-            background-color: yellow; /* 背景颜色为黄色 */
-            color: black; /* 文字颜色为黑色 */
-            border: none; /* 无边框 */
-            cursor: pointer; /* 鼠标悬停时显示为指针 */
-        }
-        
-        /* 设置登录链接的样式 */
-        .login-link {
-            position: absolute; /* 绝对定位 */
-            top: 40px; /* 距离顶部10px */
-            right: 260px; /* 距离右侧10px */
-        }
-        
-        .captcha {
-            display: flex; /* 使用flex布局 */
-            align-items: center; /* 垂直居中对齐 */
-            margin-bottom: 15px; /* 下外边距为15px */
-        }
-        
-        /* 设置验证码图片的样式 */
-        .captcha img {
-            height: 30px; /* 高度为30px */
-            margin-left: 10px; /* 左外边距为10px */
-        }
-        
-    </style>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <div class="container">
@@ -124,7 +49,7 @@
                 <img src="./image/验证码/验证码2.jpg" alt="Captcha Image" style="width: 150px; height: 40px;"> <!-- 替换为你的验证码图片URL -->
                 <a href="#" style="color: blue;" onclick="getRandomCaptcha(); return false;">换一张</a>
             </div>
-            <button type="submit">注册</button>
+            <button type="submit" value="注册">注册</button>
         </form>
         <p class="login-link">已有账号？<a href="#"><font color =pink>立即登录</font></a></p>
     </div>

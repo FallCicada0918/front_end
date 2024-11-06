@@ -3,6 +3,24 @@
     margin: 0;
     padding: 0;
 }
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  video#bgvid {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    background: url(your-video-poster.jpg) no-repeat;
+    background-size: cover;
+  }
 body{
     /* 100%窗口高度 */
     height: 100vh;
