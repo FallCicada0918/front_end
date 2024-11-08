@@ -1,0 +1,87 @@
+<!--
+ * @Description: 
+ * @Author: FallCicada
+ * @Date: 2024-11-07 08:52:51
+ * @LastEditors: FallCicada
+ * @LastEditTime: 2024-11-07 10:31:34
+ * @: 無限進步
+-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript</title>
+  <link rel="icon" href="./image/js-logo-sm.png" type="image/png">
+  <!-- 内部脚本 -->
+  <script>
+    // alert("hello,world");
+    // console.log('hello,world')
+    // console.log("hello,js");
+    // console.log("hello,js,'双引号中可以嵌套单引号'");
+    // console.log('hello,js,"单引号中可以嵌套双引号"');
+
+    function add(a,b){
+      return a+b;
+    }
+    var c=add(1,2);
+    console.log('🚀 FALLCICADA ~> c:', c);
+    function myAdd(a,b){
+      return a+b;
+    }
+     var d=myAdd(1,2);
+     console.log('🚀 FallCicada - d:', d);
+
+     function add(a,b){
+      console.log('🚀 FALLCICADA ~> add - a+b:', a+b);
+      return a+b;
+      
+     }
+  </script>
+  <!-- 外部脚本 -->
+  <script src="./js/index.js">
+  </script>
+  
+</head>
+
+<body>
+  喜欢的水果：<input id="inputfruit" type="text" placeholder="请输入你喜欢的水果" value="苹果">
+<br>
+<input id="btn1" type="button" value="按钮1" onclick="clickBtn1()">
+<input id="btn2" type="button" value="按钮2" onclick="add(1,2)">
+<input id="btn3" type="button" value="按钮3">
+</body>
+<script>
+    //获取输入框内容
+    var fruitElement=document.getElementById("inputfruit");
+    if (fruitElement) {
+      var fruitValue=fruitElement.value;
+    }
+    //alert("阻塞运行");
+    console.log('🚀 FALLCICADA ~> fruitElement:', fruitElement);
+    switch (fruitValue) {
+      case "苹果":
+        //alert("用户喜欢苹果");
+        break;
+        case "香蕉":
+       // alert("用户喜欢香蕉");
+        break;
+    }
+    function clickBtn1(){
+      console.log("btn1被点击");
+    }
+    //通过id获取按钮元素
+    var btn3 = document.getElementById("btn3");
+    console.log('🚀 FallCicada ~> btn3:', btn3);
+    if(btn3){
+        btn3.onclick=function(){
+          console.log("btn3被点击");
+        }
+    }
+
+  </script>
+</html>

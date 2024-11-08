@@ -1,54 +1,64 @@
-Html CSS JavaScript 前端三要素
-  Html
-    做网页结构、文本 主体内容 类似于人的身体 主体框架
-  CSS
-    做样式的 调整网页内容的颜色、大小等样式 类似于人着装或者妆容
-  JavaScript 
-    做网页交互 让网页动起来的内容 
-软件架构
+# Html CSS JavaScript 前端三要素
+## Html
+>做网页结构、文本 主体内容 类似于人的身体 主体框架
+## CSS
+>做样式的 调整网页内容的颜色、大小等样式 类似于人着装或者妆容
+## JavaScript 
+>做网页交互 让网页动起来的内容 
+## 软件架构
   B/S 
+  
   C/S
-网络协议
+## 网络协议
   http协议 请求、响应模型
+  
   https 加密协议 http + ssl证书
-URL 
-  统一资源定位符 像是每家每户的地址 URL是网页的地址
-  格式：协议://ip:port/path/index.html
-     https://fanyi.baidu.com/index.html
-     http://124.223.22.76/chms/#/
-     http://124.223.22.76:80/chms/#/
-     http://124.223.22.76:80/chms/#/
-     80是默认端口 可以省略
-     index.html 是默认首页 可以省略不写
-     比如：
-     http://124.223.22.76
-     http://124.223.22.76:80/index.html
-     http://127.0.0.1:5500/day46/index.html
-     Apache2  httpd2
-     nginx 代理 访问A -> B
-前后端分离开发
+## URL 
++ 统一资源定位符 像是每家每户的地址 URL是网页的地址
++ 格式：
+  + 协议://ip:port/path/index.html
+    + https://fanyi.baidu.com/index.html
+    + http://124.223.22.76/chms/#/
+    + http://124.223.22.76:80/chms/#/
+    + http://124.223.22.76:80/chms/#/
+    + 80是默认端口 可以省略
+    + index.html 是默认首页 可以省略不写
+    + 比如：
+    + http://124.223.22.76
+    + http://124.223.22.76:80/index.html
+    + http://127.0.0.1:5500/day46/index.html
+    + Apache2  httpd2
+    + nginx 代理 访问A -> B
+## 前后端分离开发
   jsp
+  
   之前的开发模式 前后端代码耦合在一起 难以维护
-前端开发环境
+## 前端开发环境
   VSCode 类似于idea
+  
   NodeJS 类似于jdk
-前端框架
+## 前端框架
   jQuery
+  
   Vue React Angular
-第三方组件库
+## 第三方组件库
   优点：样式好看、兼容性比较强，上手容易
+  
   elementUI AntDesign Vant
-原生移动端开发技术
+## 原生移动端开发技术
   iOS Android 华为鸿蒙
-混合移动端
+## 混合移动端
   小程序（微信、QQ、支付宝、抖音、...）
+  
   ReactNative 
+  
   cordova
+  
   uni-app
-后端开发
+## 后端开发
   NodeJS
-虚拟现实 数字孪生 51World 线上展厅
-HTML
+## 虚拟现实 数字孪生 51World 线上展厅
+# HTML
   超文本标记语言
   超文本：超过了普通的文本，可以展示图片、视频、音频等动态的内容
   标记语言：区分于编程语言
@@ -106,7 +116,7 @@ HTML
     <textarea>
     <form>
     <button>
-CSS
+# CSS
   层叠样式表 cascading style sheets
   是一种向网页中添加样式的机制 主要做页面美化和布局控制
   可以修饰html或者xml等文件
@@ -274,10 +284,162 @@ CSS
     浮动布局 float
     定位 position
     flex布局
-JavaScript(ES5,ES6)
-    介绍
+# JavaScript(ES5,ES6)
+  介绍
+    是一种跨平台、功能强大、应用广泛的面向对象脚本语言。
+    是现代Web开发的核心技术之一
+  和Java的关系
+    JavaScript和Java是完全不同的语言
+    js最初是收到java启发设计的，有一定的相似性
+    最初命名是LiveScript 为了营销考虑 改名为JavaScript
+  js的组成
+    ECMAScript 简称ES 是js的标准、核心
+    DOM 文档对象模型
+    BOM 浏览器对象模型
+  js的引入
+    具体的某个事件绑定上写
+    内部脚本 在head标签中写script标签直接写js代码
+    外部脚本 在head标签中写script标签引入外部js文件
+      <script src="./js/index.js">
+        内部js代码不生效
+        alert("hello,world");
+      </script>
+  文件后缀名
+    .js 
+  注释
+    // 单行注释
+    /* 多行注释 */
+  输出语句
+    java: 终端输出system.out.println("");
+    js:
+      浏览器消息提示：alert("hello,world");
+      控制台输出：   console.log("");
+  变量：
+    var   用于声明全局变量
+          没有局部作用域 可以被重复声明
+    let   用于声明变量 有局部作用域的概念
+    const 用于声明常量
+          声明时必须赋值，赋值后值不可以修改
+    注意：
+      js是弱类型语言 声明时不需要指定数据类型
+      赋值时确定数据类型且数据类型可以更改
+  变量命名格式：
+    和java类似 
+    字母、数字、下划线_或者美元符$
+    数字不能开头
+    驼峰命名
+    常量名全大写用_做连字符
+  数据类型：
+    java
+      基本类型
+      引用类型
+    js
+      原始类型
+        number(整数、小数、NaN)
+        string(字符串 "" '')
+        boolean(true,false)
+        null(空)
+        undefined(声明了但是没有初始化的变量)
+        Symbol(代表独一无二的值 ES6新增)
+      引用类型
+        object
+  如何判断数据类型
+    typeof 运算符
+  运算符
+    算术运算符 + - * / 等
+    赋值运算符 = += -= *= 等 
+    比较运算符 > < >= <= != == ===
+    逻辑运算符 && || !
+    三目运算符 表达式?表达式成立的结果:表达式不成立的结果
+    == 判断等号两边数据的值是否相同
+    === 判断等号两边数据的类型是否相同，类型不同的话直接false，类型相同的话再比较值
+  类型转换
+    其他类型转换为数值类型
+      parseInt() Number()
+    其他类型转换为boolean类型
+      0 NaN 转 boolean类型的结果是 false
+      其他数字 结果都是 true
+      undefined null 转 boolean类型的结果是 false
+      string 空字符串转换结果为false
+             非空字符串转换结果为true
+  流程控制语句
+    if else elseif 
+    switch
+    for
+    while
+  函数
+    function 函数名 (参数1，参数2，...){
+      函数体
+    }
+    不需要声明形参类型和返回值类型
+    var myAdd = function(a,b){
+      return a+b;
+    }
+  事件绑定
+      <!-- 给按钮绑定事件 方式1 -->
+      <input id="btn1" type="button" value="按钮1" onclick="clickBtn1()">
+      <input id="btn2" type="button" value="按钮2" onclick="add(1,2)">
+      方式2：在js代码中 获取元素后再绑定事件
+  事件类型
+    onclick()
+  语法：
+    js中字符串可以使用单引号 也可以使用双引号 但是不能混用
+  js运行环境
+    1. 浏览器
+    2. NodeJS
+      1. node index.js
+      2. node 回车 进入到node命令行模式
+  对象
+    基本对象
+      String Array JSON
+    BOM 
+      Window Location
+    DOM
+      js将html中每一个标签都封装成一个对象
+  Array
+    https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array
+    声明
+      var arr = new Array(1,2,3);
+      var arr1 = [1,2,3];
+    和java中的区别
+      不需要指定数据类型
+      同一个数组可以存放任意类型的值
+      不需要指定数组长度 数组长度是可变的
+### 方法
+      push 
+      splice
+      slice
+      toString
+      pop
+      join
+      find
+      ...
+      forEach()
+        参数是一个函数
+        只会遍历有值的元素
+        三种使用方式
+          ！箭头函数
+#### String 
+    [String](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/String)
+    创建
+      var str = new String("hello");
+      var str2 = "hello";
+    属性
+      length
+    方法
+      trim() 去除字符串首尾空格
+      substring() 截取字符串
+      startsWith()
+      endsWith()
+      indexOf()
+      replace()
+      slice()
+      split()
+      toLowerCase()
+      toUpperCase()
+  自定义对象
     
-
-
 学习网站 MDN 
+
+12345565667765745643563
 https://developer.mozilla.org/zh-CN/docs
