@@ -554,23 +554,69 @@ https://developer.mozilla.org/zh-CN/docs
 ## 学习方式
 - 官网文档
   - https://cn.vuejs.org/
-## 创建vu
+## 创建vue
 1. 使用npm创建一个vue应用
 
     `npm create vue@latest`
 2. 如果系统没有安装`create-vue@3.12.1`
 
-    1. npm install create-vue@3.12.1 -g
-    2. 软件名称：create-vue
-    3. 命令：create-vue@3.12.1
-    4. 参数：3.12.1
-    5. 全局命令：-g
-- 单页应用
+    1. `npm install create-vue@3.12.1 -g`
+    2. 软件名称：`create-vue`
+    3. 命令：`create-vue@3.12.1`
+    4. 参数：`3.12.1`
+    5. 全局命令：`-g`
+## 单页应用
+### create-vue 
+是vue官方的项目脚手架工具，可以帮我们快速创建一个vue项目，在创建过程中，可以快速配置项目的常用功能
+### TypeScript
+是JavaScript的扩展 
+### JSX 支持
+在js代码中 直接写 html 标签的技术
+### Vue Router
+路由 描述的是url与界面之间的映射关系
+
+Vue Router 是 Vue.js 官方的路由管理器，用于构建单页面应用（SPA）。它允许开发者通过不同的 URL 映射到不同的组件，从而实现页面的导航和组件的切换。
+
+主要作用包括：
+- **URL 映射**：将不同的 URL 映射到不同的组件或视图。
+- **导航守卫**：在路由切换前后执行特定的逻辑，如权限验证或数据预加载。
+- **嵌套路由**：支持在一个路由中嵌套多个子路由，构建复杂的界面结构。
+- **动态路由**：支持基于参数的动态路由匹配。
+
+实现原理：
+- **路由表**：定义 URL 与组件之间的映射关系。
+- **路由视图**：使用 `<router-view>` 组件作为占位符，根据当前的 URL 动态渲染对应的组件。
+- **路由链接**：使用 `<router-link>` 组件创建导航链接，实现页面间的跳转。
+- **历史模式**：通过 HTML5 History API 或 hash 模式管理浏览器的历史记录，实现无刷新页面的导航。
+### Pinia
+状态管理机 进行组件与组件之间的数据共享
+### ESLint 
+用于代码质量检测 质量控制
+### package.json 
+- dependencies
+- devDependencies
+### npm install 
+- 缩写 npm i
+- 使用 npm 安装下载 这个项目package.json文件中声明的依赖 
+### 依赖安装位置 /node_modules
+依赖文件 以及依赖文件的依赖文件 所以内容比较多 如果部分依赖文件缺失 建议删除/node_modules重新安装
+### 更改npm源地址 
+npm config set registry https://registry.npmmirror.com
+### 查看npm源地址
+npm config get registry
+### 启动项目
+- npm run dev 
+- dev来源于package.json中的配置
+### 打包项目
+npm run build
+### 项目部署
+放到服务器的httpd中
+### 项目目录结构
 ```
 My_Vue_app(項目名)/
 ├── /.vscode
-│      └── 
-├── /node_modules
+│       └── 
+├── /node_modules ~> 项目依赖安装位置  
 │       └── 
 ├── /public ~> 静态资源文件
 │       └── 
@@ -578,25 +624,33 @@ My_Vue_app(項目名)/
 │       └── 
 ├── /components ~> 存放自定义组键
 │       └── 
-├── /src - 主要代码文件目录(戰鬥目錄)
-│       ├──/assets ~>静态文件目录
+├── /src ~> 主要代码文件目录(戰鬥目錄)
+│       ├── /assets ~> 静态文件目录
 │       │
 │       ├── /views ~> 视图文件夹 放大型页面组件 比如登录页 购物车页面等
 │       │
 │       ├── /components ~> 存放自定义组件的位置 小型组件 比如 按钮 下拉列表等
 │       │
-│       ├── /router ~> 定义
+│       ├── /router ~> 定义路由
 │       │
 │       ├── main.js ~> 配置文件
 │       │
 │       └── App.vue ~>应用的主页组件 称为视图view
 ├── package-lock.json ~> 记录npm安装依赖的信息 如果出现bug 易于定位问题
 │
+├── index.html ~> 主页
+│
+├── jsconfig.json ~>配置文件
+│       "@/*": ["./src/*"]
+│       ./src/App.vue 
+│       ./src/views/AboutView.vue 
+│       @/App.vue 
+│
 ├── package.json ~> 
 │
 ├── /.gitignore ~> git忽略文件
 │
-├──vite.config.js ~> vite的配置文件
+├── vite.config.js ~> vite的配置文件
 │
 └── README.md-介绍当前项目
 ```
