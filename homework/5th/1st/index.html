@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>点灯</title>
+</head>
+
+<body>
+    <img id="h1" src="img/on.gif">  <br><br>
+    
+    <div class="cls">杰普软件</div>   <br>
+    <div class="cls">Java程序员</div>  <br>
+    <input type="checkbox" name="hobby" value="movie"> 电影
+    <input type="checkbox" name="hobby" value="travel"> 旅游
+    <input type="checkbox" name="hobby" value="game"> 游戏
+</body>
+<script>
+    // 获取img标签对象
+    var img = document.getElementById('h1');
+
+    // 获取所有复选框
+    var hobbies = document.getElementsByName('hobby');
+
+    // 添加事件监听器到每个复选框
+    for (var i = 0; i < hobbies.length; i++) {
+        hobbies[i].addEventListener('change', function() {
+            updateImage();
+        });
+    }
+
+    // 更新图片函数
+    function updateImage() {
+        var allChecked = true;
+        for (var i = 0; i < hobbies.length; i++) {
+            if (!hobbies[i].checked) {
+                allChecked = false;
+                break;
+            }
+        }
+        if (allChecked) {
+            img.src = "img/on.gif";
+        } else {
+            img.src = "img/off.gif";
+        }
+    }
+
+    // 页面加载时调用一次，确保初始状态正确
+    updateImage();
+
+    // 其他原有功能保持不变
+    // 将所有div标签的内容后面加上: very good (红色字体)
+    var divs = document.getElementsByTagName('div');
+    for (var i = 0; i < divs.length; i++) {
+        divs[i].innerHTML += " <font color='red'>very good</font>";
+    }
+</script>
+</html>

@@ -1,0 +1,103 @@
+<!--
+ * @Description: 
+ * @Author: FallCicada
+ * @Date: 2024-11-04 19:07:59
+ * @LastEditors: FallCicada
+ * @LastEditTime: 2024-11-04 20:13:27
+ * @: 無限進步
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+    <!-- 样式标签 -->
+    <style>
+        /* 给标签为table的元素设置样式 */
+        table ,th, td {
+            /* 设置边框 宽度1px 黑色 */
+            border: 1px solid black;
+            /* 表格内标签合并 */
+            border-collapse: collapse;
+        }
+        table{
+            /* 设置表格文字居中显示 */
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col style="width: 10%;">
+            <col style="width: 15%;">
+            <col style="width: 10%;">
+            <col style="width: 15%;">
+            <col style="width: 10%;">
+            <col style="width: 15%;">
+            <col style="width: 25%;">
+        </colgroup>
+        <tr>
+            <th colspan="7">个人简历</th>      
+        </tr>
+        <tr>
+            <td style="background-color: #cccccc;">姓名</td>
+            <td></td>
+            <td style="background-color: #cccccc;">性别</td>
+            <td></td>
+            <td style="background-color: #cccccc;">出生年月</td>
+            <td></td>
+            <td colspan="3" rowspan="6"></td>
+        </tr>
+        <tr>
+            <td style="background-color: #cccccc;">祖籍</td>
+            <td></td>
+            <td style="background-color: #cccccc;">民族</td>
+            <td></td>
+            <td style="background-color: #cccccc;">政治面貌</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td style="background-color: #cccccc;">身体状况</td>
+            <td></td>
+            <td style="background-color: #cccccc;">婚姻状况</td>
+            <td></td>
+            <td style="background-color: #cccccc;">学历</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td style="background-color: #cccccc;">所学专业</td>
+            <td colspan="2"></td>
+            <td  style="background-color: #cccccc;">毕业院校</td>
+            <td colspan="2"></td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="background-color: #cccccc;">专业能力</td>
+            <td rowspan="2" colspan="5"></td>
+        </tr>
+        <tr></tr>
+        <tr>
+            <td style="background-color: #cccccc;">求职意向</td>
+            <td colspan="6"></td>
+        </tr>
+        <tr>
+            <td style="background-color: #cccccc;">专业课程</td>
+            <td colspan="6"></td>
+        </tr>
+        <tr height = "80">
+            <td style="background-color: #cccccc;">实践经历</td>
+            <td colspan="6"></td>
+        </tr>
+        <tr height = "50">
+            <td style="background-color: #cccccc;">获奖情况</td>
+            <td colspan = "6"></td>
+        </tr>
+        <tr height  = "50">
+            <td style="background-color: #cccccc;">自我评价</td>
+            <td colspan = "6"></td>
+        </tr>
+    </table>
+</body>
+</body>
+</html>

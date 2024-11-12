@@ -59,12 +59,14 @@
   NodeJS
 ## 虚拟现实 数字孪生 51World 线上展厅
 # HTML
-  超文本标记语言
-  超文本：超过了普通的文本，可以展示图片、视频、音频等动态的内容
-  标记语言：区分于编程语言
-  HTML5 
-  后缀
+  - 超文本标记语言
+  - 超文本：超过了普通的文本，可以展示图片、视频、音频等动态的内容
+  - 标记语言：区分于编程语言
+  ### HTML5 
+  - 后缀
+  ```
     .html .htm
+  ```
   VSCode自动生成html文档结构
     ! 按回车键（英文感叹号）
   注释 
@@ -86,8 +88,10 @@
         等
         title
       部分元素特有的属性
+    ```html
         <img src="./img/image.png" width="88" height="88" alt="" />
-      type="password" name="password"
+        type="password" name="password"
+    ```
     单标签
       <br></br>
       <br />
@@ -112,17 +116,21 @@
       优点：用户信息相对安全，地址栏看不到，但是请求体中也能看到，所以建议加密
       缺点：使用稍微复杂一点
   其他比较常见的标签
-    <option>
-    <textarea>
-    <form>
-    <button>
+    ```html
+        <option>
+        <textarea>
+        <form>
+        <button>
+    ```
 # CSS
-  层叠样式表 cascading style sheets
-  是一种向网页中添加样式的机制 主要做页面美化和布局控制
-  可以修饰html或者xml等文件
-  文件扩展名 .css
-  根据高内聚低耦合的开发思路，在html中直接修改样式的一些属性和方法是不推荐使用的，所以样式尽量用css控制
-  语法：
++ 层叠样式表 cascading style sheets
++ 是一种向网页中添加样式的机制 主要做页面美化和布局
++ 可以修饰html或者xml等文件
++  文件扩展名 .css
++ 根据高内聚低耦合的开发思路，在html中直接修改样式的一些属性和方法是不推荐使用的，所以样式尽量用css控制
+  
+  - 语法：
+  ```css
     选择器 {
       /* 单行注释 */
       属性名：属性值；
@@ -131,11 +139,13 @@
       属性名：属性值 属性值 属性值；
       border: 1px solid black;
     }
-    css属性和值之间用 : 分隔
-    css的属性有多个的值用 (空格)分隔
-    css的多个属性和值之间用;分隔
-    css 多选择器
-  颜色：
+    ```
+    - css属性和值之间用 : 分隔
+    - css的属性有多个的值用 (空格)分隔
+    - css的多个属性和值之间用;分隔
+    - css 多选择器
+   - 颜色：
+    ```css 
     red yellow green black white 等
     十六进制表示法 三个通道 # 00 00 00 三个颜色 红绿蓝
       #000 表示黑色 和 #000000一致
@@ -150,6 +160,7 @@
       rgba(0, 0, 0, 0); 
       最后一个值代表透明度 (0,1)
       0全透明 1不透明
+    ```
   单位：
     px 绝对单位 像素点 类似与厘米、毫米
     %  相对单位 width:10%; 相对于父元素宽度的10%
@@ -285,14 +296,14 @@
     定位 position
     flex布局
 # JavaScript(ES5,ES6)
-  介绍
+  ## 介绍
     是一种跨平台、功能强大、应用广泛的面向对象脚本语言。
     是现代Web开发的核心技术之一
-  和Java的关系
+  ## 和Java的关系
     JavaScript和Java是完全不同的语言
     js最初是收到java启发设计的，有一定的相似性
     最初命名是LiveScript 为了营销考虑 改名为JavaScript
-  js的组成
+  ## js的组成
     ECMAScript 简称ES 是js的标准、核心
     DOM 文档对象模型
     BOM 浏览器对象模型
@@ -406,6 +417,7 @@
       同一个数组可以存放任意类型的值
       不需要指定数组长度 数组长度是可变的
 ### 方法
+```Js
       push 
       splice
       slice
@@ -415,6 +427,7 @@
       find
       ...
       forEach()
+```
         参数是一个函数
         只会遍历有值的元素
         三种使用方式
@@ -438,8 +451,152 @@
       toLowerCase()
       toUpperCase()
   自定义对象
-    
+  JSON
+  JavaScript对象标记法
+  JavaScript Object Notation(JSON)
+  语法:
+  key值必须使用双引号（不是单引号）标记 Value可以任意
+  {
+    "key":10,
+    "key1":"String",
+    "key2":true,
+    "key3":Value2
+  }
+  
 学习网站 MDN 
 
+ 自定义对象
+  JSON  
+    JavaScript对象标记法
+    JavaScript Object Notation 
+    语法：  
+      key值必须使用双引号（不是单引号）标记 value可以是任意的js数据类型
+      {
+        "key":30,
+        "key1":"string",
+        "key1":true,
+        "likes":[1,2,3],
+        "obj":{
+          "name":"zs",
+          "age":12
+        },
+        "key2":value2
+      }
+    使用场景
+      前后台数据交互的时候
+      序列化和反序列化 
+      JSON.stringify();
+      JSON.pares();
+  BOM
+    Browser Object Model   
+      js将浏览器各个功能封装成对象，通过对象操作浏览器
+    Window 浏览器窗口对象
+      alert 
+      confirm
+      setInterval()
+      setTimeout()
+    Location  地址栏对象 
+      获取地址栏信息
+    Screen    屏幕对象
+    History   历史记录对象
+    Navigator 浏览器对象 
+  DOM 
+    https://developer.mozilla.org/zh-CN/docs/Web/API/Document_Object_Model
+    Document Object Model 文档对象模型
+    js将html中每一个标签都封装成一个对象  
+    Document 整个文档对象
+    Element  元素对象 
+    Attribute 属性对象
+    Text 文本对象
+      <div>123</div>
+    Comment 注释对象
+    DOM的主要作用
+      更改元素内容
+      更改元素样式
+      给元素绑定事件
+      给元素移除事件
+      添加、删除元素
+    主要方法
+      getElementById() 
+      getElementsByClassName() 
+      getElementsByTagName() 
+    元素的主要属性
+      innerHTML
+      innerText
+      style 
+      className
+    元素的主要方法
+      remove
+
 12345565667765745643563
+
 https://developer.mozilla.org/zh-CN/docs
+
+
+# Vue
+
+## 引入
+#### 比如打扫屋子
+- 直接使用html、css、js 像是自己亲手去打扫
+- 如果使用 Vue框架 家政阿姨帮你去打扫 
+## 软件
+- Vscode NodeJS
+## 介绍
+- Vue 读音：view
+- 是一套构建用户界面的渐进式框架
+## 主流的前端框架
+- Vue react Anguter
+- 版本
+  - Vue2
+    - 23年12月31日停止维护
+  - Vue3 
+    - 2020年9月发布
+## 学习方式
+- 官网文档
+  - https://cn.vuejs.org/
+## 创建vu
+1. 使用npm创建一个vue应用
+
+    `npm create vue@latest`
+2. 如果系统没有安装`create-vue@3.12.1`
+
+    1. npm install create-vue@3.12.1 -g
+    2. 软件名称：create-vue
+    3. 命令：create-vue@3.12.1
+    4. 参数：3.12.1
+    5. 全局命令：-g
+- 单页应用
+```
+My_Vue_app(項目名)/
+├── /.vscode
+│      └── 
+├── /node_modules
+│       └── 
+├── /public ~> 静态资源文件
+│       └── 
+├── /.gitignore
+│       └── 
+├── /components ~> 存放自定义组键
+│       └── 
+├── /src - 主要代码文件目录(戰鬥目錄)
+│       ├──/assets ~>静态文件目录
+│       │
+│       ├── /views ~> 视图文件夹 放大型页面组件 比如登录页 购物车页面等
+│       │
+│       ├── /components ~> 存放自定义组件的位置 小型组件 比如 按钮 下拉列表等
+│       │
+│       ├── /router ~> 定义
+│       │
+│       ├── main.js ~> 配置文件
+│       │
+│       └── App.vue ~>应用的主页组件 称为视图view
+├── package-lock.json ~> 记录npm安装依赖的信息 如果出现bug 易于定位问题
+│
+├── package.json ~> 
+│
+├── /.gitignore ~> git忽略文件
+│
+├──vite.config.js ~> vite的配置文件
+│
+└── README.md-介绍当前项目
+```

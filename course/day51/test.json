@@ -1,0 +1,15 @@
+{
+    "key": 30,
+    "key1": "string",
+    "key2": true,
+    "likes": [
+      1,
+      2,
+      3
+    ],
+    "obj": {
+      "name": "zs",
+      "age": 12
+    },
+    "key3": "value2"
+  }
